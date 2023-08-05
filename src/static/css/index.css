@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: var(--c5);
+
+  --c1: #424949;
+  --c2: #395B64;
+  --c3: #A5C9CA;
+  --c4: #aaabaa;
+  --c5: #262a2a;
+  --c6: #444646;
+  --c7: #1d1f1f;
+
+
+  --roboto: 'PT Sans', sans-serif;
+}
+
+
+@media screen and (min-width: 1300px){
+
+  header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    /* background-color: var(--c7); */
+    display: flex;
+    align-items: center;
+  }
+  main {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 80px);
+    bottom: 0;
+  }
+
+  #f-screen {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: none;
+    right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--c6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #f-symbol {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+  }
+  #e-symbol {
+    display: none;
+  }
+
+  .fs-exit #e-symbol {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+    background-color: blue;
+  }
+
+  .fs-exit #f-symbol {
+    display: none;
+  }
+
+
+  .search-container {
+    position: relative;
+    margin: 50px;
+    height: 60px;
+    /* border: 1px solid #395B64; */
+    display: flex;
+    align-items: center;
+  }
+
+  .search {
+    width: 400px;
+    height: 100%;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px;
+    background: var(--c1);
+    padding: 10px;
+    padding-left: 80px;
+    font-family: var(--roboto);
+    font-weight: bold;
+    color: var(--c4);
+    font-size: 20px;
+  }
+  .search:focus {
+    outline-style: none;
+  }
+
+  .g-icon {
+    position: absolute;
+    top: 20%;
+    left: 1.5%;
+    width: 35px;
+    height: 35px;
+  }
+  .search-btn{
+    position: relative;
+    width: 60px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background: var(--c1);
+    cursor: pointer;
+  }
+  #m-glass {
+    width: 20px;
+    height: 20px;
+    filter: invert(70%);
+  }
+  .microphone-btn {
+    position: relative;
+    width: 60px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background: var(--c1);
+    margin: 5px;
+    cursor: pointer;
+  }
+  #micro-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(70%);
+  }
+}
