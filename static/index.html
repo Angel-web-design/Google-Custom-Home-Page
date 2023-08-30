@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-ES" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/80f09bcbb5.js" crossorigin="anonymous"></script>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./css/index.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="" id="favicon">
+
+  <title>New Tab</title>
+
+</head>
+<body>
+  
+  <header>
+    <button id="f-screen" title="Full screen">
+        <i class="fa-solid fa-up-right-and-down-left-from-center" id="f-symbol"></i>
+        <i class="fa-solid fa-down-left-and-up-right-to-center" id="e-symbol"></i>
+    </button>
+
+
+    <a href="https://unsplash.com/" class="l1" target="_blank">
+      Unsplash
+    </a>
+    <a href="https://angel-web-design.github.io/Portfolio/" class="l2" target="_blank">
+      Portfolio
+    </a>
+    <a href="https://mail.google.com/mail" class="l3" target="_blank">
+      Gmail
+    </a>
+
+    
+  </header>
+  
+  <main>
+
+
+    <div class="search-container">
+      <span>
+        <img src="./svg/google icon.svg" class="g-icon">
+      </span>
+      <input type="text" placeholder="Search with google" class="search">
+      <button class="search-btn" title="Search">
+        <i class="fa-solid fa-magnifying-glass" id="m-glass" ></i>
+      </button>
+      <button class="microphone-btn" id="micro-btn" title="Voice search">
+        <i class="fa-solid fa-microphone" id="micro-icon"></i>
+      </button>
+    </div>
+
+
+
+    <div class="popup">
+      <input type="checkbox" id="popup__1" class="popup-check">
+      <label for="popup__1" id="popup__label-1" class="check-label">New</label>
+      
+      <input type="checkbox" id="popup__2" class="popup-check">
+      <label for="popup__2" id="popup__label-2" class="check-label">Current</label>
+    </div>
+
+
+    <aside class="querys">
+      <button class="query-btn">
+        <i class="fa-solid fa-angle-left" id="q-left"></i>
+        <i class="fa-solid fa-angle-right" id="q-right"></i>
+      </button>
+
+      <section id="root"></section>
+
+    </aside>
+    
+    
+
+    <section class="app-container">
+        <a class="app" href="https://github.com/" target="_blank">
+          <img src="./svg/github.svg">
+          <label>Github</label>
+          <p>Github.com</p>
+        </a>
+        <a class="app" href="https://www.notion.so/" target="_blank">
+          <img src="./svg/notion.svg">
+          <label>Notion</label>
+          <p>Notion.so</p>
+        </a>
+        <a class="app" href="https://stackoverflow.com/" target="_blank">
+          <i class="fa-brands fa-stack-overflow"></i>
+          <label>Stack Overflow</label>
+          <p>Stackoverflow.com</p>
+        </a>
+        <a class="app" href="https://youtube.com/" target="_blank">
+          <img src="./svg/youtube.svg">
+          <label>Youtube</label>
+          <p>Youtube.com</p>
+        </a>
+
+        <a class="app" href="https://chat.openai.com/" target="_blank">
+          <img src="./svg/chatgpt.svg">
+          <label>Chat Gpt</label>
+          <p>Chat.openai.com</p>
+        </a>
+        <a class="app" href="https://open.spotify.com/" target="_blank">
+          <i class="fa-brands fa-spotify"></i>
+          <label>Spotify</label>
+          <p>Open.spotify.com</p>
+        </a>
+        <a class="app" href="https://www.netflix.com/" target="_blank">
+          <img src="./svg/netflix.svg">
+          <label>Netflix</label>
+          <p>Netflix.com</p>
+        </a>
+        <a class="app" href="https://web.whatsapp.com/" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+          <label>WhatsApp</label>
+          <p>Web.whatsapp.com</p>
+        </a>
+      
+      
+    </section>
+
+
+
+  </main>
+
+</body>
+  <script src="./main.js" type="module"></script>
+</html>
